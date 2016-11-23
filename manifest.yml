@@ -1,0 +1,5 @@
+---
+applications:
+- name:    bluemix-demo-derekja
+  host:    bluemix-demo-derekja
+  memory:  128M
