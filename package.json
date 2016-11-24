@@ -1,19 +1,20 @@
 {
-    "name": "bluemix-demo",
-    "version": "0.0.0",
-    "dependencies": {
-        "express": "~4.x",
-        "commander": "^2.6.0",
-        "http-post": "^0.1.1",
-        "http-proxy": "^1.8.1",
-        "cf-deployment-tracker-client": "*"
-    },
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/derekja/bluemix_demo"
-    }
+  "name": "bluemix-demo",
+  "version": "0.0.0",
+  "dependencies": {
+    "cf-deployment-tracker-client": "*",
+    "commander": "^2.6.0",
+    "express": "~4.x",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.8.1",
+    "mysql": "^2.12.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derekja/bluemix_demo"
+  }
 }
