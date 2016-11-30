@@ -26,7 +26,8 @@ setInterval(function () {
     clearDBconnection.query('SELECT 1');
 }, 5000);
 
-app.use(cors(express.static(__dirname + '/public')));
+app.use(cors());
+app.use(express.static(__dirname + '/public'));
 
 
 app.get("/carList", function(request, response){
