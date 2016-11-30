@@ -1,4 +1,5 @@
 var express = require("express"),
+    cors = require('cors'),
     app = express();
 
 var port = process.env.VCAP_APP_PORT || 8080;
@@ -25,7 +26,7 @@ setInterval(function () {
     clearDBconnection.query('SELECT 1');
 }, 5000);
 
-app.use(express.static(__dirname + '/public'));
+app.use(cors(express.static(__dirname + '/public')));
 
 
 app.get("/carList", function(request, response){
